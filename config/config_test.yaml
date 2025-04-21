@@ -1,0 +1,20 @@
+echo 'data_sources:
+  finnhub:
+    api_endpoint: "https://finnhub.io/api/v1"
+    rate_limit: 60
+  polygon:
+    api_endpoint: "https://api.polygon.io/v2"
+    rate_limit: 5
+
+model:
+  features:
+    - open
+    - high
+    - low
+    - close
+    - volume
+  training:
+    test_size: 0.2
+    random_state: 42
+
+# Simplified configuration for test environment' > config/config_test.yaml

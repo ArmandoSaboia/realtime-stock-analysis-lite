@@ -1,0 +1,20 @@
+echo "# Virtual environments
+venv/
+llm_env/
+__pycache__/
+*.py[cod]
+*$py.class
+.ipynb_checkpoints/
+
+# Large files
+*.csv
+*.parquet
+*.pkl
+
+# Configuration files with secrets
+.env
+secrets.yaml
+
+# Logs and temporary files
+*.log
+.DS_Store" > .gitignore
